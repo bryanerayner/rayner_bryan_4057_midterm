@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+}	
+body{
+	font-size: 62.5%;	
+	font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+	background-color: #666;
+}
+h1, h2, h3{
+	font-family: 'Lily Script One', cursive;
+	font-weight: 500;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+}
+h2{
+	font-size: 3.0rem;	
+}
+h3{
+	font-size: 2.4rem;
+	color: #494949;	
+}
+p, li, a{
+	font-weight: 400;
+	color: #555;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.6rem;
+}
+a{
+	font-size: 1.6rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+#wrapper{
+	max-width: 960px;
+	margin: 0 auto 20px auto;
+	border:1px solid #aaa;
+	background-color: #fff;	
+}
+.masthead{
+	width:100%;
+	background-color: #E963CE;
+	color: #fff;
+}
+.nav{
+	width:100%;
+}
+.navbar{
+	overflow:hidden;
+}
+.main{
+	width: 590px;
+	float: left;
+}
+.sidebar{
+	width: 370px;
+	float:right;
+}
+.footer{
+	clear:both;
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	color: #fff;	
+	padding: 30px 20px;
+	text-shadow:
+   	-2px -2px 0 #670095,  
+     2px -2px 0 #670095,
+    -2px 2px 0 #670095,
+     2px 2px 0 #670095;
+
+}
+.masthead::after
+{
+	content:"";
+	display:table;
+	clear:both;
+}
+.masthead img{
+	float:left;
+	width:160px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+.navbar li{
+	float:left;	
+	width: 192px;  /* 960/5 = 192 */
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #e4e4e4;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #333;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+
+ul
+{
+	list-style: square inside url("images/Cupcake.sm.png");
+}
+
+li.cupcake
+{
+margin-left: 40px;
+}
+
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #e4e4e4;
+}
